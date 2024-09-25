@@ -14,12 +14,19 @@ else:
 if M == 1:
     x1, y1 = input().split()
     x1, y1 = int(x1), int(y1)
+    if (x+1 == x1 or x-1 == x1) or (y+1 == y1 or y-1 == y1):
+    ubin_tersedia -= 1
+
      
 elif M == 2:
     x1, y1 = input().split()
     x1, y1 = int(x1), int(y1)
     x2, y2 = input().split()
     x2, y2 = int(x2), int(y2)
+    if (x+1 == x1 or x-1 == x1) or (y+1 == y1 or y-1 == y1):
+        ubin_tersedia -= 1
+    if (x+1 == x2 or x-1 == x2) or (y+1 == y2 or y-1 == y2):
+        ubin_tersedia -= 1
      
 elif M == 3:
     x1, y1 = input().split()
